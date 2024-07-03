@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>main Page</title>
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container  text-center fs-1 p-2 text">Easy-cart</div>
+
+        <div class="container py-5 text-bg-warning justify-content-center w-50 "
+            id="login-page">
+            <h1 class="container justify-content-center fw-bold">User Login</h1>
+            <form class="form-control" id="loginForm">
+                <label class="form-label" for="username">UserName:</label>
+                <input class="form-control w-50" type="text" id="name"
+                    placeholder="UserName" required>
+                <label class="form-label" for="password">Password:</label>
+                <input class="form-control w-50" type="password" id="password"
+                    placeholder="Enter your password">
+                <button class="btn btn-outline-primary m-3"
+                    id="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="user-list" class="p-3 bg-warning" style="display: none;"></div>
+        <div id="cart-list" class="bg-warning"></div>
+
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/pro.js"></script>
+        <script src="./js/all.min.js"></script>
+    </body>
+</html>

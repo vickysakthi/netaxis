@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap');
+body{
+    margin: 20px;
+    /* padding: 0; */
+    font-family: "Mukta", sans-serif;
+}
+.heading{
+    text-align: center;
+    color: rgb(7, 205, 255);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product, #cart-items li {
+    border: 1px solid wheat;
+    /* padding: 15px; */
+    margin-bottom: 10px;
+    width: 20%;
+    height: 230px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product img, #cart-items li img{
+    max-width: 100px;
+    margin-top: 3px;
+
+  }
+
+  button{
+    background-color: rgb(21, 203, 248);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #00b60f;
+}
+
+button.remove{
+    background-color: rgb(1, 143, 32) ;
+}
+
+button.remove:hover{
+    background-color:  rgb(255, 0, 0);
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+

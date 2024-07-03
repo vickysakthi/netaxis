@@ -1,0 +1,21 @@
+body {
+  /* #fdccbc */
+  background-color: white;
+  color: #000000;
+}
+
+.dark-mode {
+  background-color:#60efff;
+  color: rgb(0, 0, 0);
+  
+}
+.nav{
+  background-color:rgba(226, 179, 238, 0.822) !important;
+}
+.overflow-auto {
+        overflow-y: auto;
+        max-height: 400px;
+      }
+
+
+      

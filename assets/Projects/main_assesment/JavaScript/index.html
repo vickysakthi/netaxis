@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-page</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/stlye.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+<body style="background-color: cyan;">
+
+<div class="sidebar">
+    <h4>widgets</h4>
+    <div>
+           <button class="m-3" onclick="showText()">
+            <i class="fa-solid fa-info"></i><br><hr>input</button>
+            <button class="m-3" onclick="showButton()">
+                <i class="fa-solid fa-play"></i><br><hr>Button</button>
+            <button class="m-3" onclick="showDivider()">                
+                <i class="fa-solid fa-divide"></i><br><hr>Divider</button>
+            <button class="m-3" onclick="showSpace()">
+                <i class="fa-solid fa-text-height"></i><br><hr>Space</button>
+        </div>
+</div>
+
+<div class="content">
+  <div id="dynamicContent">    
+  </div>
+</div>
+
+<script src="./js/all.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

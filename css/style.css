@@ -1,0 +1,33 @@
+.bg-color{
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+#MainAssessment, #SampleAssessment, #BootstrapContent, #JavaScriptContent, #JQueryContent, #ModernJsContent, #AngularJsContent {
+  display: none;
+}
+
+.img-main-hover-zoom {
+  height: 250px;
+  overflow: hidden;
+}
+
+.img-main-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-main-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+
+.img-hover-zoom {
+  height: 150px;
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}

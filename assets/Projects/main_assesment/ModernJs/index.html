@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Product and User Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color:#bbc7dc" id="nav">
+      <div class="container-fluid">
+        <img src="./assets/img/logo-2.ico" alt="logo" width="100" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <form class="d-flex ms-auto">
+            <button id="admin"  type="button" onclick="showAdminPage()" class="btn btn-lg me-2 fw-bold btn-outline-primary text-white">
+              Admin<i class="fa-solid fa-user-gear"></i>
+            </button>
+            <button type="button" class="btn btn-lg fw-bold btn-outline-warning text-white" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Add user<i class="fa-solid fa-user-plus"></i>
+            </button>
+            <div class=" form-switch">
+              <input class="form-check-input bg-white ms-2 mt-3 p-2 " onclick="mode()" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container " id="main">
+              <div class="card">
+              <h5 class="text-center text-white">User List</h5>
+                <div class="m-3">
+                  <input type="text" id="user-name" 
+                         class="form-control"
+                         placeholder="UserName" 
+                         />
+                </div>
+                <div class="m-3">
+                  <div id="user-id" 
+                  class="form-control p-3" placeholder="UserId" ></div>
+                </div>
+                <div class="m-3 row">
+                  <button type="button" class="btn btn-warning text-white"
+                    onclick="addUser()" 
+                    data-bs-dismiss="modal">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- main page -->
+    <div id="main-content">
+    <div class="m-3">
+      <div class="row">
+        <div class="col-md-8">
+          <input id="product-search" class="form-control me-2" type="search"
+            placeholder="Search" aria-label="Search">
+        </div>
+        <div class="col-md-4">
+          <input id="user-search" class="form-control me-2" type="search"
+            placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+    </div>
+
+    <div class="m-3">
+      <div class="row">
+        <div class="col-md-8 ">
+            <h5 class="fst-italic text-center">Product List</h5>
+            <div  class="overflow-auto" style="max-height: 697px;">
+                <div class="card p-3" id="products-list">
+                </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <!-- <div class="card p-3" id="user-list"> -->
+              <h5 class="text-center fst-italic">User List</h5>
+            <div class="card p-3" id="user-list">
+            </div>
+          <!-- </div> -->
+          <button class="btn btn-lg btn-outline-primary mt-3" id="addToCartButton"
+          onclick="navigateToTransactionPage()">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- Admin page -->
+    
+    <div id="admin-page" class="m-5"style="display: none; ">
+        <button id="back-to-main-button" class="btn btn-primary mt-3">Back to Main Page</button>
+        <h3 class="text-center">Admin Page</h3>
+        <div class="row">
+          <div class="col-md-8">
+            <div  class="overflow-auto" style="max-height: 697px;">
+            <div class="row border rounded-3">
+              <div class="col-md-5">
+                <h5 class="text-center">Product List</h5>
+                <div id="admin-product-list" class="card p-3">
+
+                </div>
+              </div>
+            
+              <div class="col-md-7">
+                <h5 class="text-center">Status</h5>
+                <div id="admin-status" class="border p-3">
+                  <button class="btn btn-success"  onclick="approveStatus()">Approve</button>
+                  <button class="btn btn-danger" onclick="disapproveStatus()">Disapprove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="">
+              <input id="admin-user-search" class="form-control me-2" 
+              type="search" placeholder="Search Users" aria-label="Search">
+             
+              <h5 class="text-center fst-italic">User List</h5>
+              <div id="admin-user-list" class="border rounded-3 p-3">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+<!-- transaction page -->
+
+<div id="transaction-page"class="d-none" >
+    <div class="m-3">
+      <div class="row">
+        <div class="col-md-7 ">
+          <div class="border rounded-3">        
+          <div class="d-flex align-items-center">
+            <img src="./assets/img/user-logo.jfif" alt="User Avatar" 
+                  class="rounded-circle mr-2" width="20%" id="transaction-username-avatar">
+            <div id="transaction-username" class="text-info h4 w-50 p-3 border rounded-3">Username</div>
+            <button class="btn btn-lg btn-danger ms-auto me-3" id="back-button">Continue Shopping</button>
+          </div>
+          <div id="transaction-product-list">
+            
+          </div>
+          <div class="m-3">
+            <h3 id="total-price">Total Amount: <span>0</span></h3>
+            <button class="btn btn-lg btn-primary d-flex ms-auto me-3 " id="payment-button">Payment</button>
+          </div>
+          
+        </div>
+      </div>
+        <div class="col-md-5 text-center border rounded-3">
+      <div class="card bg-primary text-white rounded-3">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">Card details</h5>
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+              class="img-fluid rounded-3"
+              style="width: 45px"
+              alt="Avatar"
+            />
+          </div>
+          <p class="small mb-2">Card type</p>
+          <a href="#!" type="submit" class="text-white"
+          ><i class="fab fa-cc-mastercard fa-2x me-2"></i
+        ></a>
+        <a href="#!" type="submit" class="text-white"
+          ><i class="fab fa-cc-visa fa-2x me-2"></i
+        ></a>
+        <a href="#!" type="submit" class="text-white"
+          ><i class="fab fa-cc-amex fa-2x me-2"></i
+        ></a>
+        <a href="#!" type="submit" class="text-white"
+          ><i class="fab fa-cc-paypal fa-2x"></i
+        ></a>
+        <form class="mt-4">
+          <div  class="form-outline form-white mb-4">
+            <input
+              type="text"
+              id="typeName"
+              class="form-control form-control-lg"
+              placeholder="Cardholder Name"
+            />
+            <label class="form-label" for="typeName">Cardholder's Name</label>
+          </div>
+          <div class="form-outline form-white mb-4">
+            <input
+              type="text"
+              id="typeText"
+              class="form-control form-control-lg"
+              placeholder="1234 5678 9012 3457"
+            />
+            <label class="form-label" for="typeText">Card Number</label>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-6"> 
+              <div class="form-outline form-white">
+                <input
+                  type="text"
+                  id="typeExp"
+                  class="form-control form-control-lg"
+                  placeholder="MM/YYYY"
+                  minlength="7"
+                  maxlength="7"
+                />
+                <label class="form-label" for="typeExp">Expiration</label>
+              </div> 
+            </div>
+            <div class="col-md-6">
+              <div class="form-outline form-white">
+                <input
+                  type="password"
+                  id="typeText"
+                  class="form-control form-control-lg"
+                  placeholder="&#9679;&#9679;&#9679;"
+                  minlength="3"
+                  maxlength="3"
+                />
+                <label class="form-label" for="typeText">Cvv</label>
+              </div>              
+            </div>  
+          </div>
+        </form>
+        <hr class="my-4" />
+        <div class="d-flex justify-content-between mb-4">
+          <p class="mb-2">Total</p>
+          <p class="mb-2">4818</p>
+        </div>
+        <button
+        type="button"
+        id="checkoutProduct"
+        class="btn btn-info btn-block btn-lg"
+      >
+        <div class="d-flex justify-content-between">
+          <span>4818</span>
+          <span >Checkout<i class="fas fa-long-arrow-alt-right ms-2"></i
+          ></span>
+        </div>
+      </button>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="paymentmodal" tabindex="-1" aria-labelledby="finalpayment" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="finalpayment">Payment Process</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Payment Successfully Completed
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
+

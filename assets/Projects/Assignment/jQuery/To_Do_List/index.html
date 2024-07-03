@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.jpg">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <img src="img/image_1.jpg" alt="">
+        </div>
+        <div class="row ms-2">
+            <div class="col-md-6 task-form">
+                <h2>📃To Do List</h2>
+                <hr>
+                <h2>Add a Task:</h2>
+                <form action="" id="formOne">
+                    <div class="form-group">
+                        <label for="name-of-task">Name of Task:</label>
+                        <input type="text" id="name-of-task" class="form-control">
+                        <label for="date-of-task">Date:</label>
+                        <input type="date" id="date-of-task" class="form-control">
+                        <label for="time-of-task">Time:</label>
+                        <input type="time" id="time-of-task" class="form-control">
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn addButton">Add</button>
+                    </div>
+                </form>
+                <hr>
+                <h2>Tasks:</h2>
+                <ul id="list">
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div id="show-list">
+                    <p>Task: <span class="task-name"></span></p>
+                    <p>Date: <span class="task-date"></span></p>
+                    <p>Time: <span class="task-time"></span></p>
+                    <div id="tickbox">
+                        
+                    </div>
+                    <p>Status: <span class="task-status"></span></p>
+                    <div id="buttons">
+          
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

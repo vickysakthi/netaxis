@@ -1,0 +1,15 @@
+.thumb{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+
+h4{
+    font-family: "Kings", cursive;
+}
+h1{
+    font-family: "Tapestry", serif;
+}

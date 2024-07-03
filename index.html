@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- external style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+      <!-- navbar -->
+          <nav class="navbar navbar-expand-lg text-white bg-color">
+            <div class="container-fluid">
+              <a class="navbar-brand text-uppercase fw-bold fs-2 text-white" href="index.html"
+                ><span style="color:coral;">pro</span>jects</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <button
+                      class="btn btn-outline-warning text-uppercase text-white fw-bold fs-5"
+                      aria-current="page"
+                      id="NavAssessment"
+                      >assesment</
+                    >
+                  </li>
+                  <li class="text-white nav-item">
+                    <button
+                      class="btn btn-outline-warning text-uppercase text-white fw-bold fs-5"
+                      id="NavAssignment"
+                      >Assignment</
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+      <!-- section-1 -->     
+       <section>
+         <div class="container">
+           <!-- display content -->
+           <div class="container bg-color card py-3 my-5" id="AssessmentContent">
+             <h3 class="text-center text-white text-uppercase">Assessment</h3>
+             <div class="row gy-3">
+               <div class="col-md-6">
+                 <div class="card h-100">
+                   <div class="img-main-hover-zoom">
+                     <img
+                       src="./assets/img/main_assessment-img.png"
+                       class="card-img-top"
+                       alt="main_ass-img"
+                     />
+                   </div>
+                   <div class="card-body">
+                     <h4 class="card-title">Main-Assessment</h4>
+                     <button id="main" class="btn btn-outline-success">Go To Main</button>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-md-6">
+                 <div class="card h-100">
+                   <div class="img-main-hover-zoom">
+                     <img
+                       src="./assets/img/images-1.jpg"
+                       class="card-img-top"
+                       alt="sample_ass-img"
+                     />
+                   </div>
+                   <div class="card-body">
+                     <h4 class="card-title">Sample-Assessment</h4>
+                     <button id="sample" class="btn btn-outline-primary">Go to Sample</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+             <!-- main_assesment -->
+             <div class="card bg-color p-3 mt-5" id="MainAssessment">
+               <button onclick="assessmentBactBtn()" class="btn btn-danger"
+                 >Back to Assessment</button
+               >
+               <h1 class="text-center text-white text-uppercase">Main Assessment</h1>
+               <div class="row gy-3">
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Main_html.png"
+                         class="card-img-top thumbnail"
+                         alt="Main_html"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">bootstrap</h5>
+                       <a
+                         href="./assets/Projects/main_assesment/html_bootstrap/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Main_JavaScript.png"
+                         class="card-img-top"
+                         alt="Main_JavaScript"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">JavaScript</h5>
+                       <a
+                         href="./assets/Projects/main_assesment/JavaScript/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Main_jQuery.png"
+                         class="card-img-top"
+                         alt="Main_jQuery"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">JQuery</h5>
+                       <a
+                         href="./assets/Projects/main_assesment/jQuery/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Main_ModernJs.png"
+                         class="card-img-top"
+                         alt="Main_ModernJs"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">Modern JS</h5>
+                       <a
+                         href="./assets/Projects/main_assesment/ModernJs/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="row mt-3">
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Main_Angular.jpeg"
+                         class="card-img-top thumbnail"
+                         alt="Main_Angular"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">Angular JS</h5>
+                       <a href="" class="btn btn-info text-white">Click Here</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <!-- sample_assesment -->
+             <div class="card bg-color p-3 mt-5" id="SampleAssessment">
+               <button onclick="assessmentBactBtn()" class="btn btn-danger"
+                 >Back to Assessment</button
+               >
+               <h1 class="text-center text-white text-uppercase">sample Assessment</h1>
+               <div class="row gy-3">
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Sample_html.png"
+                         class="card-img-top"
+                         alt="Sample_html"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">html bootstrap</h5>
+                       <a
+                         href="./assets/Projects/sample_assessment/html_bootstrap/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Sample_JavaScript.png"
+                         class="card-img-top"
+                         alt="Sample_jQuery"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">JavaScript</h5>
+                       <a
+                         href="./assets/Projects/sample_assessment/JavaScript/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card h-100">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Sample_jQuery.png"
+                         class="card-img-top"
+                         alt="Sample_jQuery"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">JQuery</h5>
+                       <a
+                         href="./assets/Projects/sample_assessment/jQuery/index.html"
+                         class="btn btn-info text-white"
+                         >Click Here</a
+                       >
+                     </div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 col-lg-3">
+                   <div class="card">
+                     <div class="img-hover-zoom">
+                       <img
+                         src="./assets/img/Sample_Angular.png"
+                         class="card-img-top"
+                         alt="Sample_Angular"
+                       />
+                     </div>
+                     <div class="card-body">
+                       <h5 class="card-title text-uppercase">Angular JS</h5>
+                       <a href="#" class="btn btn-info text-white">Click Here</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           
+         </div>
+       </section>
+      
+      <!-- section-2 -->
+       <section>
+          <div class="container">
+          <div class="container bg-color card py-3 my-5" id="AssignmentContent">
+            <h3 class="text-center text-white text-uppercase">Assignment</h3>
+            <!-- Assignment -->
+            <div class="row gy-3">
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="img-main-hover-zoom">
+                    <img
+                      src="./assets/img/html_bs-img.png"
+                      class="card-img-top"
+                      alt="Bootstrap-img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Html&Bootstrap</h4>
+                    <button id="Bootstrap" class="btn btn-outline-primary">Go To Bootstrap</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="img-main-hover-zoom">
+                    <img
+                      src="./assets/img/javascript-img.jpg"
+                      class="card-img-top"
+                      alt="JavaScript-img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">JavaScript</h4>
+                    <button id="JavaScript" class="btn btn-outline-primary">Go To JavaScript</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="img-main-hover-zoom">
+                    <img
+                      src="./assets/img/jquery-img.png"
+                      class="card-img-top"
+                      alt="JQuery-img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">JQuery</h4>
+                    <button id="JQuery" class="btn btn-outline-primary">Go To JQuery</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="img-main-hover-zoom">
+                    <img
+                      src="./assets/img/modernjs-img.png"
+                      class="card-img-top"
+                      alt="ModernJS-img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Modern Js</h4>
+                    <button id="Modern" class="btn btn-outline-primary">Go To ModernJS</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="img-main-hover-zoom">
+                    <img
+                      src="./assets/img/angularjs-img.jfif"
+                      class="card-img-top"
+                      alt="AngularJS-img"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Angular Js</h4>
+                    <button id="Modern" class="btn btn-outline-primary">Go To AngularJS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Html & Bootstrap -->
+            <div class=" card bg-color p-3 mt-5" id="BootstrapContent">
+              <div>
+                <button onclick="assignmentBackToBtn()" class="btn btn-danger"
+                >Back to Assignment</button>
+              </div>
+              <h3 class="text-white text-center">Html & Bootstrap</h3>
+              <div class="row gy-3">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/gallery.png"
+                        class="card-img-top thumbnail"
+                        alt="Gallery_Task"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Gallery_Task</h5>
+                      <a
+                        href="./assets/Projects/Assignment/Html&Bootstrap/task_gallery/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/jumbotron.png"
+                        class="card-img-top thumbnail"
+                        alt="Jumbotron_Task"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Jumbotron_Task</h5>
+                      <a
+                        href="./assets/Projects/Assignment/Html&Bootstrap/task_jumbotron/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/nav_task.png"
+                        class="card-img-top thumbnail"
+                        alt="Navbar_Task"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Navbar_Task</h5>
+                      <a
+                        href="./assets/Projects/Assignment/Html&Bootstrap/task_nav/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/nav&jumbo.png"
+                        class="card-img-top thumbnail"
+                        alt="Nav&Jumbo_Task"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Nav&Jumbo_Task</h5>
+                      <a
+                        href="./assets/Projects/Assignment/Html&Bootstrap/task_nav&junbo/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="container bg-color card py-3 my-5" id="JavaScriptContent">
+              <div>
+                <abutton onclick="assignmentBackToBtn()" class="btn btn-danger"
+                >Back to Assignment</abutton>
+              </div>
+              <h3 class="text-white text-center">JavaScript</h3>
+              <div class="row gy-3">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/color_game.png"
+                        class="card-img-top thumbnail"
+                        alt="v"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Color_Game</h5>
+                      <a
+                        href="./assets/Projects/Assignment/JavaScript/color_game/game.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/game.png"
+                        class="card-img-top thumbnail"
+                        alt="Game_Number"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Game_Number</h5>
+                      <a
+                        href="./assets/Projects/Assignment/JavaScript/Game/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/random_pick.png"
+                        class="card-img-top thumbnail"
+                        alt="Random_PickNum"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Random_PickNum</h5>
+                      <a
+                        href="./assets/Projects/Assignment/JavaScript/random_picknum/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/Todo_Js.png"
+                        class="card-img-top thumbnail"
+                        alt="Todo_Task"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Todo_Task</h5>
+                      <a
+                        href="./assets/Projects/Assignment/JavaScript/todo_task/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- JQuery -->
+            <div class="container bg-color card py-3 my-5" id="JQueryContent">
+              <div>
+                <button onclick="assignmentBackToBtn()" class="btn btn-danger"
+                >Back to Assignment</button>
+              </div>
+              <h3 class="text-white text-center">JQuery</h3>
+              <div class="row gy-3">
+                <div class="col-md-6 col-lg-6">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/employe_details.png"
+                        class="card-img-top thumbnail"
+                        alt="Employee_Dtails"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Employee_Dtails</h5>
+                      <a
+                        href="./assets/Projects/Assignment/jQuery/Employee_details/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/Todo_jQuery.png"
+                        class="card-img-top thumbnail"
+                        alt="Todo_List"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Todo_List</h5>
+                      <a
+                        href="./assets/Projects/Assignment/jQuery/To_Do_List/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modern JS -->
+            <div class="container bg-color card py-3 my-5" id="ModernJsContent">
+              <div>
+                <button onclick="assignmentBackToBtn()" class="btn btn-danger"
+                >Back to Assignment</button>
+              </div>
+              <h3 class="text-white text-center">Modern JS</h3>
+              <div class="row gy-3">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/data_get.png"
+                        class="card-img-top thumbnail"
+                        alt="Data_Getting"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Data_Getting</h5>
+                      <a
+                        href="./assets/Projects/Assignment/ES6/data_get/data.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/easy_cart.png"
+                        class="card-img-top thumbnail"
+                        alt="Easy_Cart"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Easy_Cart</h5>
+                      <a
+                        href="./assets/Projects/Assignment/ES6/Easy_cart/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/student_data.png"
+                        class="card-img-top thumbnail"
+                        alt="Student_Details"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Student_Details</h5>
+                      <a
+                        href="./assets/Projects/Assignment/ES6/student_details/index.html"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Angular JS -->
+            <div class="container bg-color card py-3 my-5" id="AngularJsContent">
+              <div>
+                <button onclick="assignmentBackToBtn()" class="btn btn-danger"
+                >Back to Assignment</button>
+              </div>
+              <h3 class="text-white text-center">Angular JS</h3>
+              <div class="row gy-3">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card h-100">
+                    <div class="img-hover-zoom">
+                      <img
+                        src="./assets/img/Main_html.png"
+                        class="card-img-top thumbnail"
+                        alt="Angular_html"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-uppercase">Angular</h5>
+                      <a
+                        href="#"
+                        class="btn btn-info text-white"
+                        >Click Here</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>   
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

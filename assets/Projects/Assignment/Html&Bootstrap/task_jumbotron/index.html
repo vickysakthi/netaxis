@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<style type="text/css">
+    .jumbotron {
+      padding: 4rem 2rem;
+      margin-bottom: 2rem;
+      background-color: var(--bs-light);
+      border-radius: .3rem;  
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+   
+      <div class="container">
+       
+        <div class=" mt-4 p-5 bg-primary text-white rounded my-3">
+            <h1 class="display-2 ">Welcome to Jumbotron Bootstrap!</h1>
+    
+            <p class="lead">When using button classes on  elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+                <a href="https://www.getbootstrap.com" class="btn btn-primary btn-lg">Learn More</a>
+          </div>
+
+          <div class=" mt-4 p-5 bg-primary text-white rounded">
+            <form action="">
+             <div class="mb-3">
+              <h1>Registeration Form</h1>
+             </div> 
+              <div class="mb-3">
+                <label class="form-label" for="firstname">First Name:</label>
+                  <input class="form-control" name="firstname" id="firstname" type="text" placeholder="John" required>
+                 
+              </div>
+        
+              <div class="mb-3">
+                <label class="form-label" for="lastname">Last Name:</label>
+                   <input class="form-control" name="lastname" id="lastname" type="text" placeholder="Smith" required>
+              </div>
+        
+              <div class="mb-3">
+                <label class="form-check-label" for="male">Male:</label>
+                   <input class="form-check-input" name="Gender" id="male" type="radio" value="male">
+              
+               <label class="form-check-label" for="female">Female:</label>
+                  <input class="form-check-input" name="Gender" id="female" type="radio" value="female">
+              
+               <label class="form-check-label" for="others">Others: </label>
+                  <input class="form-check-input" name="Gender" id="others" type="radio" value="others">
+              </div>
+        
+              <div class="mb-4">
+                 <label class="form-label" for="email">Email:</label>
+                  <input class="form-control" name="email" id="email" type="mail" placeholder="example@gmail.com" required>
+              </div>
+              <div class="mb-4">
+                  <label class="form-label" for="password">Password:</label>
+                    <input class="form-control" name="password" id="password" type="password" placeholder="password" pattern=".{5,10}" required title="5 to 10 charcter">
+              </div>
+        
+            <div class="mb-4">
+             <label class="form-label">Birthday:
+              <select class="form-select"  name="month">
+                  <option value="">Month</option>
+                  <option value="">may</option>
+                  <option value="">jun</option>
+                  <option value="">july</option>
+              </select>
+             <select class="form-select" name="day">
+              <option value="">Day</option>
+              <option value="">27</option>
+              <option value="">28</option>
+              <option value="">29</option>
+             </select> 
+             <select class="form-select" name="year">
+              <option value="">Year</option>
+              <option value="">1999</option>
+              <option value="">2000</option>
+              <option value="">2001</option>
+             </select>
+             </label>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="agree">I agree to the terms and conditions </label>
+              <input class="form-check-input" id="agree" name="agree" type="checkbox">
+            </div>
+            <div class="mb-4">
+              <button class="btn btn-success">Submit</button>
+            </div>
+          </form>
+          </div>
+          <div class=" mt-4 p-5 bg-primary text-white rounded">
+            <div class="alert alert-success">
+              <strong>Success!</strong>alert message
+            </div>
+              <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+              <strong>Success!</strong>alert message
+            </div>
+            <div class="alert alert-danger alert-dismissible fade show">
+              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Success!</strong>alert message
+          </div>
+          </div>
+          <div class="jumbotron">
+          <div class="container mt-3 bg-danger">
+            <h1>Bootstrap images</h1>
+             <img src="assets/images/flower.jpg" alt="flower" class="img-thumbnail">
+             <img src="assets/images/flower.jpg" alt="flower" class="rounded float-start">
+             <img src="assets/images/flower.jpg" alt="flower" class="float-end">
+             <img src="assets/images/flower.jpg" alt="flower" class="rounded-circle">
+          </div>
+          </div>
+
+          <div class="jumbotron">
+            <h1>Bootstrap Basics</h1>
+
+            <!-- button -->
+            <button class="btn btn-outline-primary btn-lg">Primary</button>
+            <button class="btn btn-secondary btn-sm">Secondary</button>
+            <button class="btn btn-success btn-xs">Success</button>
+            <button class="btn btn-danger" disabled>Danger</button>
+            <button class="btn btn-warning btn-xl">Warning</button>
+            <button class="btn btn-info active" disabled="disabled">Info</button>
+            <button class="btn btn-light">Light</button>
+            <button class="btn btn-dark">Dark</button>
+            <a  class="btn btn-link disabled" aria-disabled="true">Link</a>
+            <a href="https://www.getbootstrap.com" class="btn btn-link" area-disabled="true">Link</a>
+            <input class="btn btn-primary" type="submit" value="Input">
+            </div>
+              <!-- tables -->
+              <div class="jumbotron">
+              <div container mt-3>
+                <h1>Basic table</h1>
+                <div container mt-3>
+                  <div class="table-responsive">
+                <table class="table table-sm table-bordered text-center table-hover">
+                  <thead class="table-success">
+                    <tr>
+                      <th>name</th>
+                      <th>Email</th>
+                      <th>Place</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                      <th>Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                    <tr>
+                      <td>vicky</td>
+                      <td>vky@gmail.com</td>
+                      <td>Trichy</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+              </div>
+              <div class="form-floating">
+              <textarea class="form-control"  id="Textarea" cols="20" rows="15"></textarea>
+              <label for="">Comments</label>
+              </div>
+          </div>
+          
+      </div>
+      <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

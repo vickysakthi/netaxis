@@ -1,0 +1,56 @@
+
+.bground{
+background-image: linear-gradient(
+    to bottom,
+    #52bada 0%,#099ba0 50%,#a8dadc 50%,#a8dadc 100%
+);
+
+    border-bottom: 20px;
+    /* background-color: red; */
+    /* background-image: linear-gradient(#00CAE0,#43FFCD); */
+    /* background: hsla(182, 86%, 60%, 1);
+
+background: linear-gradient(180deg, rgb(15, 232, 240) 30%, rgb(19, 165, 153) 100%);
+
+background: -moz-linear-gradient(180deg, rgb(19, 215, 250) 30%, rgb(24, 206, 212) 100%);
+
+background: -webkit-linear-gradient(180deg, rgb(0, 247, 173) 30%, hsla(167, 68%, 73%, 1) 100%);
+
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#43FFCD", endColorstr="#00CAE0", GradientType=1 ); */
+/* height: 700px; */
+
+}
+
+.section3{
+    background: url(../assets/images/section3_image1.avif);
+    background-repeat: no-repeat;
+    /* height: 600px; */
+    /* min-height:fit-content; */
+}
+
+.finance{
+    background: url(../assets/images/nav1.avif);
+    background-repeat: no-repeat;
+}
+
+
+.footer-link{
+      color: lightseagreen;
+}
+
+.footer-text{
+    color: #183182;
+}
+
+
+#card1{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+   #card1{
+    max-width: 300px;
+   }
+  }
+

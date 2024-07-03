@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&display=swap');
+body{
+    margin: 20px;
+
+    font-family: "Mukta", sans-serif;
+}
+.sidebar {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #9d9e9e;
+    padding-top: 20px;
+  }
+  
+  .sidebar button {
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    background-color: white;
+  }
+  
+  .content {
+    margin-left: 300px;
+    padding: 20px;
+  }
+  
+
+
+

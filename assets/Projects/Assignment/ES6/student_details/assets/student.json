@@ -1,0 +1,59 @@
+{
+	"students": [
+		{
+			"name": "John",
+			"id": "1",
+			"marks":{
+				"Tamil": 75,
+				"English": 65,
+				"Maths": 65,
+				"Science": 55,
+				"Social": 55
+			        }
+		},
+		{
+			"name": "Praveen",
+			"id": "2",
+			"marks":{
+			"Tamil": 79,
+			"English": 65,
+			"Maths": 55,
+			"Science": 75,
+			"Social": 55
+			}
+		},
+		{
+			"name": "Somesh",
+			"id": "3",
+			"marks":{
+			"Tamil": 87,
+			"English": 65,
+			"Maths": 55,
+			"Science": 55,
+			"Social": 77
+			}
+		},
+		{
+			"name": "Mebin",
+			"id": "4",
+			"marks":{
+			"Tamil": 70,
+			"English": 65,
+			"Maths": 55,
+			"Science": 56,
+			"Social": 55
+			}
+		},
+		{
+			"name": "Jose",
+			"id": "5",
+			"marks":{
+			"Tamil": 72,
+			"English": 65,
+			"Maths": 87,
+			"Science": 55,
+			"Social": 89
+			}
+		}
+	]
+}
